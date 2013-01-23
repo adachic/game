@@ -27,6 +27,7 @@
 
 @class CCBAnimationManager;
 
+#define CCB_ENABLE_UNZIP
 #define kCCBVersion 3
 
 enum {

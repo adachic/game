@@ -161,6 +161,7 @@
 		C88A44D216B050C4006C63E4 /* zip.c in Sources */ = {isa = PBXBuildFile; fileRef = C88A44B516B050C4006C63E4 /* zip.c */; };
 		C88A44D316B050C4006C63E4 /* SSZipArchive.m in Sources */ = {isa = PBXBuildFile; fileRef = C88A44B816B050C4006C63E4 /* SSZipArchive.m */; };
 		C88A44D616B050F3006C63E4 /* CCBTest.m in Sources */ = {isa = PBXBuildFile; fileRef = C88A44D516B050F3006C63E4 /* CCBTest.m */; };
+		C88A454216B06B3B006C63E4 /* ccb.zip in Resources */ = {isa = PBXBuildFile; fileRef = C88A454116B06B3B006C63E4 /* ccb.zip */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -481,6 +482,7 @@
 		C88A44B816B050C4006C63E4 /* SSZipArchive.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSZipArchive.m; sourceTree = "<group>"; };
 		C88A44D416B050F3006C63E4 /* CCBTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCBTest.h; sourceTree = "<group>"; };
 		C88A44D516B050F3006C63E4 /* CCBTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCBTest.m; sourceTree = "<group>"; };
+		C88A454116B06B3B006C63E4 /* ccb.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; name = ccb.zip; path = game/Resources/ccb.zip; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -506,6 +508,7 @@
 		C88A42D416B04CE1006C63E4 = {
 			isa = PBXGroup;
 			children = (
+				C88A454116B06B3B006C63E4 /* ccb.zip */,
 				C88A44D416B050F3006C63E4 /* CCBTest.h */,
 				C88A44D516B050F3006C63E4 /* CCBTest.m */,
 				C88A447B16B050C4006C63E4 /* cocos2d-iphone */,
@@ -1108,6 +1111,7 @@
 				C88A444D16B04CE3006C63E4 /* ChangeLog in Resources */,
 				C88A44CC16B050C4006C63E4 /* README.md in Resources */,
 				C88A44CE16B050C4006C63E4 /* LICENSE in Resources */,
+				C88A454216B06B3B006C63E4 /* ccb.zip in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1302,6 +1306,11 @@
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = game/Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = "\"CCB_ENABLE_UNZIP\"";
+				"GCC_PREPROCESSOR_DEFINITIONS[arch=*]" = (
+					DEBUG,
+					"COCOS2D_DEBUG=1",
+				);
 				HEADER_SEARCH_PATHS = "\"game/libs/kazmath/include\"";
 				INFOPLIST_FILE = game/Resources/Info.plist;
 				OTHER_LDFLAGS = (
@@ -1320,6 +1329,7 @@
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = game/Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = "\"CCB_ENABLE_UNZIP\"";
 				HEADER_SEARCH_PATHS = "\"game/libs/kazmath/include\"";
 				INFOPLIST_FILE = game/Resources/Info.plist;
 				OTHER_LDFLAGS = (
