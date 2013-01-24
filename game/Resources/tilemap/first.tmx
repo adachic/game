@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="30" height="30" tilewidth="16" tileheight="16">
+ <tileset firstgid="1" name="inventory" tilewidth="16" tileheight="16">
+  <image source="inventory.png" trans="486d6c" width="768" height="1008"/>
+ </tileset>
+ <tileset firstgid="3025" name="map_basic" tilewidth="16" tileheight="16">
+  <image source="map_basic.png" trans="486d6c" width="688" height="832"/>
+ </tileset>
+ <layer name="inside" width="30" height="30">
+  <data encoding="base64" compression="zlib">
+   eJzT5mFg0B7Fo3gUj2IysJIAA4MyFGsIQPi+SFgJCVPbXlcg7YaEXbFgZTrYi83u4W4vuv20sBeXnbS2Fzk8cdlNS3vx+Zva9ioLYKYhetmLCyvRsNwYxaN4FI/iUYwdAwAvWsix
+  </data>
+ </layer>
+ <layer name="outside" width="30" height="30">
+  <data encoding="base64" compression="zlib">
+   eJy7zsPAcH0Uj+JRTBMchoSvI9H0shMfpoZdKgIIrCGAykfHtLKXEKamvymxl5I4GC72Ems3Lewlxu5Rewdf/NK7TEPHg8k+Wto7ikfxKB7ZGACkrZgI
+  </data>
+ </layer>
+ <layer name="upper" width="30" height="30">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFo2AUjIJRMJxA7ADarYbGB7lFk4H2bopFswOdTw/Axk5nC0cIAMWjBhZxDQb6pytcYqNgFIyCUTCUAQB5SwVm
+  </data>
+ </layer>
+</map>

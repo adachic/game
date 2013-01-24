@@ -162,6 +162,10 @@
 		C88A44D316B050C4006C63E4 /* SSZipArchive.m in Sources */ = {isa = PBXBuildFile; fileRef = C88A44B816B050C4006C63E4 /* SSZipArchive.m */; };
 		C88A44D616B050F3006C63E4 /* CCBTest.m in Sources */ = {isa = PBXBuildFile; fileRef = C88A44D516B050F3006C63E4 /* CCBTest.m */; };
 		C88A454216B06B3B006C63E4 /* ccb.zip in Resources */ = {isa = PBXBuildFile; fileRef = C88A454116B06B3B006C63E4 /* ccb.zip */; };
+		C88A454916B1B828006C63E4 /* first.tmx in Resources */ = {isa = PBXBuildFile; fileRef = C88A454516B1B828006C63E4 /* first.tmx */; };
+		C88A454A16B1B828006C63E4 /* inventory.png in Resources */ = {isa = PBXBuildFile; fileRef = C88A454716B1B828006C63E4 /* inventory.png */; };
+		C88A454B16B1B828006C63E4 /* map_basic.png in Resources */ = {isa = PBXBuildFile; fileRef = C88A454816B1B828006C63E4 /* map_basic.png */; };
+		C88A454E16B1C42E006C63E4 /* TileMapLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = C88A454D16B1C42E006C63E4 /* TileMapLayer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -483,6 +487,11 @@
 		C88A44D416B050F3006C63E4 /* CCBTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCBTest.h; sourceTree = "<group>"; };
 		C88A44D516B050F3006C63E4 /* CCBTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCBTest.m; sourceTree = "<group>"; };
 		C88A454116B06B3B006C63E4 /* ccb.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; name = ccb.zip; path = game/Resources/ccb.zip; sourceTree = "<group>"; };
+		C88A454516B1B828006C63E4 /* first.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = first.tmx; sourceTree = "<group>"; };
+		C88A454716B1B828006C63E4 /* inventory.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = inventory.png; sourceTree = "<group>"; };
+		C88A454816B1B828006C63E4 /* map_basic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = map_basic.png; sourceTree = "<group>"; };
+		C88A454C16B1C42E006C63E4 /* TileMapLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TileMapLayer.h; sourceTree = "<group>"; };
+		C88A454D16B1C42E006C63E4 /* TileMapLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TileMapLayer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -511,7 +520,8 @@
 				C88A454116B06B3B006C63E4 /* ccb.zip */,
 				C88A44D416B050F3006C63E4 /* CCBTest.h */,
 				C88A44D516B050F3006C63E4 /* CCBTest.m */,
-				C88A447B16B050C4006C63E4 /* cocos2d-iphone */,
+				C88A454C16B1C42E006C63E4 /* TileMapLayer.h */,
+				C88A454D16B1C42E006C63E4 /* TileMapLayer.m */,
 				C88A42F516B04CE1006C63E4 /* game */,
 				C88A42E216B04CE1006C63E4 /* Frameworks */,
 				C88A42E016B04CE1006C63E4 /* Products */,
@@ -561,6 +571,7 @@
 		C88A42F616B04CE1006C63E4 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				C88A454416B1B828006C63E4 /* tilemap */,
 				C88A42F716B04CE1006C63E4 /* Default.png */,
 				C88A42F916B04CE1006C63E4 /* Default-Landscape~ipad.png */,
 				C88A42FB16B04CE1006C63E4 /* fps_images.png */,
@@ -581,6 +592,7 @@
 		C88A431016B04CE1006C63E4 /* libs */ = {
 			isa = PBXGroup;
 			children = (
+				C88A447B16B050C4006C63E4 /* cocos2d-iphone */,
 				C88A442716B04CE3006C63E4 /* LICENSE_cocos2d.txt */,
 				C88A443616B04CE3006C63E4 /* LICENSE_CocosDenshion.txt */,
 				C88A446816B04CE3006C63E4 /* LICENSE_Kazmath.txt */,
@@ -929,8 +941,7 @@
 				C88A44A816B050C4006C63E4 /* CCScrollView */,
 				C88A44AB16B050C4006C63E4 /* SSZipArchive */,
 			);
-			name = "cocos2d-iphone";
-			path = "game/cocos2d-iphone";
+			path = "cocos2d-iphone";
 			sourceTree = "<group>";
 		};
 		C88A447C16B050C4006C63E4 /* CCBReader */ = {
@@ -1046,6 +1057,25 @@
 			path = minizip;
 			sourceTree = "<group>";
 		};
+		C88A454416B1B828006C63E4 /* tilemap */ = {
+			isa = PBXGroup;
+			children = (
+				C88A454516B1B828006C63E4 /* first.tmx */,
+				C88A454616B1B828006C63E4 /* tileset */,
+			);
+			name = tilemap;
+			path = Resources/tilemap;
+			sourceTree = "<group>";
+		};
+		C88A454616B1B828006C63E4 /* tileset */ = {
+			isa = PBXGroup;
+			children = (
+				C88A454716B1B828006C63E4 /* inventory.png */,
+				C88A454816B1B828006C63E4 /* map_basic.png */,
+			);
+			path = tileset;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1112,6 +1142,9 @@
 				C88A44CC16B050C4006C63E4 /* README.md in Resources */,
 				C88A44CE16B050C4006C63E4 /* LICENSE in Resources */,
 				C88A454216B06B3B006C63E4 /* ccb.zip in Resources */,
+				C88A454916B1B828006C63E4 /* first.tmx in Resources */,
+				C88A454A16B1B828006C63E4 /* inventory.png in Resources */,
+				C88A454B16B1B828006C63E4 /* map_basic.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1252,6 +1285,7 @@
 				C88A44D216B050C4006C63E4 /* zip.c in Sources */,
 				C88A44D316B050C4006C63E4 /* SSZipArchive.m in Sources */,
 				C88A44D616B050F3006C63E4 /* CCBTest.m in Sources */,
+				C88A454E16B1C42E006C63E4 /* TileMapLayer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
