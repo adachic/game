@@ -283,6 +283,8 @@ CGFloat	__ccContentScaleFactor = 1;
 
 -(BOOL) enableRetinaDisplay:(BOOL)enabled
 {
+    enabled = NO;
+    
 	// Already enabled ?
 	if( enabled && __ccContentScaleFactor == 2 )
 		return YES;
